@@ -12,3 +12,8 @@ print(leere_liste)
 del leere_liste[0]
 print(leere_liste)
 #################################
+andereliste = ["Apfel", "Birne", "Orange", "Zitrone"]
+print(len(andereliste))
+print(andereliste[: len(andereliste) + 1])
+
+zListe = ["Apfel", "Birne", "Orange", "Zitrone", ["arabisch", "spanisch"]]
