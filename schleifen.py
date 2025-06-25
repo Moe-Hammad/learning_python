@@ -1,7 +1,18 @@
 liste = []
-weiter = input("Willst du was hinzufügen? Tippe y :")
-while weiter == "y":
-    liste.append(input("Was willst du hinzufügen!"))
-    weiter = input("Mehr?")
+beenden = False
+while beenden != True:
+    opt = input("Was willst du machen? show, delete, add, finish?")
+    if opt == "add":
+        liste.append(input("Welches Item :"))
+    elif opt == "delete":
+        print(liste)
+        liste.remove(input("Welches Item soll gelöscht werden?"))
+        print(liste)
+    elif opt == "show":
+        print(liste)
+    elif opt == "finish":
+        beenden = True
+    else:
+        print("Falsche Eingabe")
 
 print(liste)
